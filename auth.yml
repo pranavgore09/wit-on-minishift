@@ -1,0 +1,11 @@
+name: auth
+containers:
+- image: docker.io/fabric8/fabric8-auth:latest
+services:
+- name: auth
+  ports:
+  - port: 8089
+configMaps:
+- data:
+  AUTH_WIT_URL: "http://localhost:8080"
+  AUTH_DEVELOPER_MODE_ENABLED: "true"
