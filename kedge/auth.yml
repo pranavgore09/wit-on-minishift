@@ -6,6 +6,10 @@ containers:
     value: "http://core:8080"
   - name: AUTH_DEVELOPER_MODE_ENABLED
     value: "true"
+  - name: AUTH_POSTGRES_HOST
+    value: "db-auth"
+  - name: AUTH_POSTGRES_PORT
+    value: "5432"
 services:
 - name: auth
   ports:

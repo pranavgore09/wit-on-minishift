@@ -6,6 +6,8 @@ containers:
     value: "http://auth:8089"
   - name: F8_DEVELOPER_MODE_ENABLED
     value: "true"
+  - name: F8_POSTGRES_HOST
+    value: "db"
 services:
 - ports:
   - port: 8080
